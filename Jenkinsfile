@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "matheusmaais/testedocker2"
+    registry = "1renatodevops/testedocker"
     registryCredential = "dockerhub"
     container_name = "testedocker"
     dockerImage = ''
@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Git Clone') {
       steps {
-        git 'https://github.com/matheusmaais/testegit.git'
+        git 'https://github.com/renatoDev0ps/testegit.git'
       }
     }
     
